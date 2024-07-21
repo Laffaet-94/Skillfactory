@@ -2,12 +2,13 @@ def greet():
    print("-------------------")
    print(" Приветвствуем вас ")
    print("     В игре        ")
-   print(" Крестики нолики   ")
+   print("  Крестики нолики! ")
    print("-------------------")
    print(" Формат ввода: x,y ")
    print(" x - номер строки  ")
    print(" y - номер столбца ")
 greet()
+
 field = [
     [" ", " ", " "],
     [" ", " ", " "],
@@ -15,7 +16,7 @@ field = [
 ]
 def show():
    print()
-   print(f"      0 | 1 | 2 | ")
+   print(f"      0 | 1 | 2 |")
    print("  --------------- ")
    for i, row in enumerate(field):
        row_str = f"  {i} | {' | '.join(row)} | "
